@@ -1,5 +1,7 @@
 # Skynet
 Welcome to Skynet, an automated address canvassing model using satellite imagery.
+First, download [training data, initialization weights, and trained weights](https://www.dropbox.com/sh/u1lqqjn5gg9wust/AABX7pcjD12miRImKZWgVAXua?dl=0)
+
 ###### *We strongly reccomend running this on linux*
 
 # 1. Preprocessing and Config file
