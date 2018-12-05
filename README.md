@@ -21,6 +21,7 @@ If the model is being trained for the first time, then ensure the ```backend.h5`
 weights will be used to kick off the training. (This does not need to be specified in the config file) 
 
 # 2. Train the Model
+[YOLOv3 implemented by experiencor, free to use under the MIT liscense](https://github.com/experiencor/keras-yolo3)
 To train the model, run the command:
 
 ```python 
@@ -41,6 +42,7 @@ Make sure the before and after images are in the root Skynet directory and are n
 
 
 # Training/Validation Set Creation
+[Label-maker from development seed, free to use under the MIT liscense](https://github.com/developmentseed/label-maker)
 In order to create our training set, we took advantage of the Label Maker package in python. To create your own training/validation 
 set using label maker, start by editing the ```config.json``` file specific to label maker. Specific coordinates if desired can be entered in, as well as specific class labels. A free access token from open map box must be obtained via their website and placed in the ```config.json``` file before any data can be download. Once the ```config.json``` file has been configured accordingly, run ```run.py``` to obtain the labeled training images. Once these images have been obtained, we recommend running the ```validate-labels.ipynb``` to manually filter out the more poorly labeled images. Finally, run ```split.sh``` to split the data into training and validation sets. 
 
